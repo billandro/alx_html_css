@@ -1,0 +1,68 @@
+body, main {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: white;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px #888888;
+}
+
+.the_link {
+    margin-top: 20px;
+}
+
+html {
+    background-color: #ddd;
+}
+ 
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure {
+    box-shadow: 0px 0px 10px 0px #b81f1f;
+}
+
+img {
+    width: auto;
+
+}
+
+footer a {
+    margin-left: 6px;
+}
