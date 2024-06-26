@@ -1,0 +1,515 @@
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS code*/
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('./assets/fonts/SourceSansPro-Bold.otf');
+}
+@font-face {
+    font-family: 'Source Sans Pro Semi-Bold';
+    src: url('./assets/fonts/SourceSansPro-Semibold.otf');
+}
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('./assets/fonts/SourceSansPro-Light.otf');
+}
+@font-face {
+    font-family: 'Source Sans Pro Black';
+    src: url('./assets/fonts/SourceSansPro-Black.otf');
+}
+@font-face {
+    font-family: 'Source Sans Pro Italic';
+    src: url('./assets/fonts/SourceSansPro-It.otf');
+}
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url('./assets/fonts/SourceSansPro-Regular.otf');
+}
+
+body {
+    font-family: 'Source Sans Pro Bold';
+    color: white;
+    background-image: url('./assets/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+header {
+    margin:  0 auto;
+    margin-top: 2rem;
+    max-width: 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro Bold';
+}
+
+header li a {
+    margin:  0 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* FIRST SECTION (MAIN) */
+.first_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.call_to_action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
+    margin-top: 6em;
+}
+
+.call_to_action h1 {
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.call_to_action .slogan {
+    margin-top: 0.9rem;
+}
+
+.call_to_action .slogan span {
+    margin: 0 2rem;
+    padding: 0;
+}
+
+.call_to_action button {
+    border: 1px transparent;
+    border-radius: 22px;
+    background-color: #C271FF;
+    color: white;
+    font-family: 'Source Sans Pro Semi-Bold';
+    padding: 0.6rem 1rem;
+    margin-top: 1.9rem;
+    font-size: 0.7rem;
+    box-shadow: 0px 6px 20px 0px black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.people_outside_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people_outside_container h3 {
+    font-family: 'Source Sans Pro Light';
+    font-size: 1.5rem;
+    margin-top: 8rem;
+}
+
+.people_outside_container h3 .learn_the_word {
+    color: #C271FF;
+    font-family: 'Source Sans Pro Bold';
+    font-size: 1.8rem;
+}
+
+.people_inside_container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.people_inside_container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 3rem;
+}
+
+.people_inside_container .card h4 {
+    font-family: 'Source Sans Pro Black';
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.people_inside_container .card p {
+    font-family: 'Source Sans Pro Italic';
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    max-width: 9em;
+}
+
+/* Quote section */
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C271FF;
+    height: 17em;
+}
+
+.quote .the_image {
+    margin-right: 2rem;
+}
+
+.quote .the_image img {
+    max-width: 100%;
+    height: 7em;
+}
+
+.the_quote {
+    height: 7.1em;
+    width: 33.4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote .the_quote blockquote {
+    line-height: 1.5em;
+    font-family: 'Source Sans Pro Regular';
+}
+
+.quote .the_quote h3 {
+    font-family: 'Source Sans Pro Bold';
+    margin-top: 1.3rem;
+}
+
+.quote .the_quote p {
+    font-family: 'Source Sans Pro Italic';
+    margin-top: 0.4rem;
+}
+
+/* Videos section */
+.videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos > h2 {
+    color: black;
+    margin-top: 4rem;
+    font-family: 'Source Sans Pro Light';
+    font-size: 1.4rem;
+    word-spacing: 0.1em;
+}
+
+.video_card > p {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 0.7rem;
+    color: rgba(7, 22, 41, 0.5016);
+    width: 17em;
+    line-height: 1.4em;
+    margin: 0.7rem 0.5rem;
+}
+
+.videos > h2 > .word_popular {
+    color: #C271FF;
+    font-family: 'Source Sans Pro Bold';
+}
+
+.videos_container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 3.5rem;
+}
+
+.video_card {
+    color: black;
+    width: 15em;
+}
+
+.videos_container > .video_card > h3 {
+    font-family: 'Source Sans Pro Bold';
+    margin: 0.7rem 0.5rem;
+}
+
+.rating_pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating_pic > span {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 0.7rem;
+    color: #C271FF;
+}
+
+.video_card > .pic_name {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0.5rem;
+    max-width: fit-content;
+    font-family: 'Source Sans Pro Semi-Bold';
+    color: #C271FF;
+    font-size: 0.8rem;
+}
+
+.video_card > .pic_name > img {
+    margin-right: 1rem;
+}
+
+.video_card > .rating_pic {
+    margin: 0.7rem 0.5rem;
+}
+
+.img1 {
+    background-image: url('./assets/img/preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 10em;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2 {
+    background-image: url('./assets/img/preview\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 10em;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img3 {
+    background-image: url('./assets/img/preview\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 10em;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img4 {
+    background-image: url('./assets/img/preview\ \(3\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 10em;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Free Membership */
+.membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #071629;
+    margin-top: 3.5rem;
+}
+
+.membership h2 {
+    font-family: 'Source Sans Pro Light';
+    margin-top: 4rem;
+    font-size: 1.4rem;
+}
+
+.membership h2 > span {
+    font-family: 'Source Sans Pro Bold';
+    color: #C271FF;
+    font-size: 1.5rem;
+    margin-right: 0.1rem;
+}
+
+.membership > div {
+    display: inline;
+}
+
+.membership_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.membership_cards > .membership_card_inner {
+    width: 15em;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.membership_card_inner > h3 {
+    font-family: 'Source Sans Pro Semi-Bold';
+    margin-top:  1.3rem;
+}
+
+.membership_card_inner > p {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.membership button {
+    border: 1px transparent;
+    border-radius: 22px;
+    background-color: #C271FF;
+    color: white;
+    font-family: 'Source Sans Pro Semi-Bold';
+    padding: 0.8rem 1.6rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 0.7rem;
+    box-shadow: 0px 0px 20px 3px #071629;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* F.A.Q section */
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.faq h2 {
+    font-family: 'Source Sans Pro Light';
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.faq_container .faq_card {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    margin-top: 2rem;
+}
+
+.faq_card_inner div h3 {
+    font-family: 'Source Sans Pro Bold';
+}
+
+.faq_card_inner p {
+    font-family: 'Source Sans Pro Regular';
+    max-width: 25em;
+    margin-top: 1.9rem;
+    font-size: 0.7rem;
+    color: rgba(7, 22, 41, 0.5016);
+    line-height: 1.4em;
+}
+
+/* Footer */
+footer {
+    margin-top: 3.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #071629;
+    color: white;
+}
+
+.footer_group {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.footer_media {
+    display: flex;
+    gap: 1em;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Source Sans Pro Regular';
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
