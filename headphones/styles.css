@@ -122,23 +122,21 @@ body {
     color: var(--white-font);
 }
 
-html, body {
-    margin: 0; 
-    height: 100%;
-}
-
 /* Header section */
 header {
-    margin:  0 auto;
-    margin-top: 1.5rem;
+    top: 29px;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
 }
 
-header img {
-    max-width: 100%;
-    height: 48px;
+.logo img {
+    max-width: 161px;
+    max-height: 32px;
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
 }
 
 nav {
@@ -152,18 +150,14 @@ nav {
 
 .menu {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.menu-toggle, .menu-icon {
-    display: none;
+    gap: 41px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 nav li {
     font-family: 'Source Sans Pro Bold';
-    margin-right: 20px;
+    list-style: none;
 }
 
 nav li a {
@@ -178,41 +172,23 @@ nav li a {
 }
 
 @media screen and (max-width: 480px) {
-    header img {
-        max-width: 100%;
-        height: 2em;
-    }
-
-    .menu-icon::before {
-        content: "\e911";
-        font-family: 'holberton_school-icon';
-    }
-
-    .menu-toggle:checked ~ .menu {
-        display: block;
-    }
-
-    .menu-toggle:checked + .icon::before {
-        content: "X";
-        font-family: inherit;
-    }
-
     nav {
         flex-direction: column;
         align-items: center;
         position: relative;
     }
 
-    .menu-toggle {
+    .menu-icon {
         display: block;
         position: absolute;
-        left: -200px;
-        top: 12px;
+        left: 0;
+        top: 10px;
+        margin-left: 20px;
     }
 
-    .menu-icon {
-        left: -200px;
-        top: 12px;
+    .menu-icon::before {
+        content: "\e911";
+        font-family: 'holberton_school-icon';
     }
 
     .menu {
@@ -223,6 +199,15 @@ nav li a {
 
     .menu li {
         margin-top: 20px;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: block;
+    }
+
+    .menu-toggle:checked + .menu-icon::before {
+        content: "X";
+        font-family: inherit;
     }
 }
 
@@ -363,7 +348,7 @@ nav li a {
     align-items: center;
     text-align: center;
     margin-top: 2rem;
-    /*transform-origin: center;*/
+    transform-origin: center;
     transition: transform 0.5s ease-in-out;
 
     &:hover {
